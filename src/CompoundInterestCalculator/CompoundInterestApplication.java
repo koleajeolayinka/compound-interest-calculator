@@ -52,7 +52,7 @@ public class CompoundInterestApplication {
 
     private static void principalBalance() {
         try {
-            System.out.println("KINDLY ENTER YOUR PRINCIPAL BALANCE");
+            System.out.println("KINDLY ENTER YOUR FINAL AMOUNT BALANCE");
             principalBalance = scanner.nextDouble();
             System.out.println("KINDLY ENTER YOUR INTEREST RATE");
             interestRate = scanner.nextDouble();
@@ -110,20 +110,23 @@ public class CompoundInterestApplication {
     }
 
     private static void AmountResult() {
-        for (int i = 0; i < 40; i++) {
-            System.out.print("=");
-        }
+        line();
         System.out.printf("%n%s: %.2f%n", "PRINCIPAL ", calculator.getPrincipal());
         System.out.printf("%s: %.2f%n", "INTEREST RATE ", calculator.getInterestRate());
         System.out.printf("%s: %.2f%n", "NUMBER OF TIMES INTEREST APPLIED ", calculator.getNumberOfTimeInterestApplied());
-        System.out.printf("%s: %.2f%n%35s%.2f%n", "TIME ", calculator.getTime(),"AMOUNT = ", calculator.getA());
+        System.out.printf("%s: %.2f%n%35s%.2f%n", "TIME ", calculator.getTime(), "AMOUNT = ", calculator.getA());
         for (int i = 0; i < 40; i++) {
             System.out.print("=");
 
         }
-
-
-
-
     }
+
+    private static void line() {
+        for (int i = 0; i < 40; i++) {
+            System.out.print("=");
+
+        }
+    }
+
 }
+

@@ -49,4 +49,9 @@ public class CompoundInterest {
         return Time;
     }
 
+    public double getA() {
+        double cal0 = Principal * (1 + InterestRate/NumberOfTimeInterestApplied);
+        double cal1 = NumberOfTimeInterestApplied * Time;
+        return Math.pow(cal0, cal1);
+    }
 }

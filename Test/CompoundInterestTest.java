@@ -35,4 +35,14 @@ public class CompoundInterestTest {
         Assertions.assertEquals(1, calculator.getTime());
 
     }
+
+    @Test
+    public void Test_Final_Amount_For_Compound_Interest(){
+        calculator.Principal(1);
+        calculator.InterestRate(1);
+        calculator.NumberOfTimeInterestApplied(1);
+        calculator.Time(1);
+        assertEquals(2, calculator.getA());
+    }
+
 }

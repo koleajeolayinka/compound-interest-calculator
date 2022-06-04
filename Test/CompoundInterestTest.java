@@ -45,4 +45,16 @@ public class CompoundInterestTest {
         assertEquals(2, calculator.getA());
     }
 
+    @Test
+    public void Test_Principal_Can_Be_Created(){
+        calculator.FinalAmount(1);
+        calculator.InterestRate(1);
+        calculator.NumberOfTimeInterestApplied(1);
+        calculator.Time(1);
+        assertEquals(3, calculator.getP());
+
+
+    }
+
+
 }

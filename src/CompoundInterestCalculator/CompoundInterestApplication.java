@@ -1,3 +1,5 @@
+package CompoundInterestCalculator;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 //P (1 + R/n) (nt) - P
@@ -21,7 +23,7 @@ import java.util.Scanner;
 //        r	=	interest rate
 //        n	=	number of times interest applied per time period
 //        t	=	number of time periods elapsed
-public class CompoundInterest {
+public class CompoundInterestApplication {
     public static Scanner scanner = new Scanner(System.in);
     public static double principalBalance;
     public static double interestRate;

@@ -1,9 +1,7 @@
 package CompoundInterestCalculator;
 
-<<<<<<< HEAD
-
 public class CompoundInterest {
-    private  double FinalAmount;
+    private double FinalAmount;
     private double Principal;
     private double InterestRate;
     private double NumberOfTimeInterestApplied;
@@ -50,7 +48,5 @@ public class CompoundInterest {
     public double getTime() {
         return Time;
     }
-=======
-public class CompoundInterest {
->>>>>>> origin/main
+
 }

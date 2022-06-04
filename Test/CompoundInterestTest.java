@@ -46,15 +46,37 @@ public class CompoundInterestTest {
     }
 
     @Test
-    public void Test_Principal_Can_Be_Created(){
+    public void Test_Principal_For_Compound_Interest(){
         calculator.FinalAmount(1);
         calculator.InterestRate(1);
         calculator.NumberOfTimeInterestApplied(1);
         calculator.Time(1);
-        assertEquals(3, calculator.getP());
+        assertEquals(2, calculator.getP());
 
 
     }
+    @Test
+    public void Test_Interest_Rate_For_Compound_Interest(){
+        calculator.FinalAmount(1);
+        calculator.Principal(1);
+        calculator.NumberOfTimeInterestApplied(1);
+        calculator.Time(1);
+        assertEquals(0, calculator.getR());
 
+    }
+    @Test
+    public void Test_Interest_Amount_For_Compound_Interest(){
+        calculator.Time(1);
+        calculator.Principal(1);
+        calculator.InterestRate(1);
+        assertEquals(1, calculator.I());
+    }
+    @Test
+    public void Test_Time_For_Compound_Interest() {
+        calculator.Principal(1);
+        calculator.InterestRate(1);
+        assertEquals(0, calculator.T());
+    }
+    
 
 }

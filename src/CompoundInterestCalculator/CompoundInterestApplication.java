@@ -1,5 +1,6 @@
 package CompoundInterestCalculator;
 
+import java.security.Principal;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 //P (1 + R/n) (nt) - P
@@ -25,6 +26,8 @@ import java.util.Scanner;
 //        t	=	number of time periods elapsed
 public class CompoundInterestApplication {
     public static Scanner scanner = new Scanner(System.in);
+    public static CompoundInterest calculator = new CompoundInterest();
+
     public static double principalBalance;
     public static double interestRate;
     public static double number;
@@ -86,11 +89,18 @@ public class CompoundInterestApplication {
         }catch (InputMismatchException ignored){
             System.out.println("Incorrect input");
         }
-        double amount = principalBalance * (1 + interestRate/number);
-        double numberAndTime = number*time;
-        double pow = Math.pow(amount, numberAndTime);
-        System.out.println("COMPOUND INTEREST IS " + pow);
+        calculator.Principal(principalBalance);
+        calculator.InterestRate(interestRate);
+        calculator.NumberOfTimeInterestApplied(number);
+        calculator.Time(time);
+        AmountResult();
 
+    }
 
+    private static void AmountResult() {
+        for (int i = 0; i < 40; i++) {
+            System.out.print("=");
+        }
+        System.out.printf("");
     }
 }

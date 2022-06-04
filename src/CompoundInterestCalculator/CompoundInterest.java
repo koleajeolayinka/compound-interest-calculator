@@ -61,4 +61,20 @@ public class CompoundInterest {
         return Math.pow(cal0, cal1);
 
     }
+
+    public double getR() {
+        double cal0 = (FinalAmount / Principal);
+        double cal1 = (1 / NumberOfTimeInterestApplied * Time);
+        double cal2 = Math.pow(cal0, cal1);
+        double cal3 = (cal2 - 1);
+        return (NumberOfTimeInterestApplied * cal3);
+    }
+
+    public double I() {
+        return Time * Principal * InterestRate;
+    }
+
+    public double T() {
+        return I() / (Principal *InterestRate);
+    }
 }

@@ -1,29 +1,7 @@
 package CompoundInterestCalculator;
 
-import java.security.Principal;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-//P (1 + R/n) (nt) - P
-
-//        Here P is principal amount.
-//        R is the annual interest rate.
-//        t is the time the money is invested or borrowed for.
-//        n is the number of times that interest is compounded per unit t, for example if interest is compounded monthly and t is in years then the value of n would be 12. If interest is compounded quarterly and t is in years then the value of n would be 4.
-//
-//        Before writing the java program let’s take an example to calculate the compound interest.
-//
-//        Let’s say an amount of $2,000 is deposited into a bank account as a fixed deposit at an annual interest rate of 8%, compounded monthly, the compound interest after 5 years would be:
-//
-//        P = 2000.
-//        R = 8/100 = 0.08 (decimal).
-//        n = 12.
-//        t = 5.
-
-//A	=	final amount
-//        P	=	initial principal balance
-//        r	=	interest rate
-//        n	=	number of times interest applied per time period
-//        t	=	number of time periods elapsed
 public class CompoundInterestApplication {
     public static Scanner scanner = new Scanner(System.in);
     public static CompoundInterest calculator = new CompoundInterest();
@@ -73,6 +51,40 @@ public class CompoundInterestApplication {
     }
 
     private static void principalBalance() {
+        try {
+            System.out.println("KINDLY ENTER YOUR PRINCIPAL BALANCE");
+            principalBalance = scanner.nextDouble();
+            System.out.println("KINDLY ENTER YOUR INTEREST RATE");
+            interestRate = scanner.nextDouble();
+            System.out.println("ENTER NUMBER OF TIMES INTEREST APPLIED PER TIME PERIOD");
+            number = scanner.nextDouble();
+            System.out.println("ENTER NUMBER OF TIME PERIODS ELAPSED IN YEAR\n\tex: 2years input 2");
+            time = scanner.nextDouble();
+        }catch (InputMismatchException ignored){
+            System.out.println("Incorrect input");
+        }
+        calculator.Principal(principalBalance);
+        calculator.InterestRate(interestRate);
+        calculator.NumberOfTimeInterestApplied(number);
+        calculator.Time(time);
+        PrincipalResult();
+
+    }
+
+    private static void PrincipalResult() {
+        for (int i = 0; i < 40; i++) {
+            System.out.print("=");
+        }
+        System.out.printf("%n%s: %.2f%n", "PRINCIPAL ", calculator.getPrincipal());
+        System.out.printf("%s: %.2f%n", "INTEREST RATE ", calculator.getInterestRate());
+        System.out.printf("%s: %.2f%n", "NUMBER OF TIMES INTEREST APPLIED ", calculator.getNumberOfTimeInterestApplied());
+        System.out.printf("%s: %.2f%n%35s%.2f%n", "TIME ", calculator.getTime(),"AMOUNT = ", calculator.getA());
+        for (int i = 0; i < 40; i++) {
+            System.out.print("=");
+
+        }
+
+
 
     }
 
@@ -84,7 +96,7 @@ public class CompoundInterestApplication {
             interestRate = scanner.nextDouble();
             System.out.println("ENTER NUMBER OF TIMES INTEREST APPLIED PER TIME PERIOD");
             number = scanner.nextDouble();
-            System.out.println("ENTER NUMBER OF TIME PERIODS ELAPSED");
+            System.out.println("ENTER NUMBER OF TIME PERIODS ELAPSED IN YEAR\n\tex: 2years input 2");
             time = scanner.nextDouble();
         }catch (InputMismatchException ignored){
             System.out.println("Incorrect input");
@@ -101,6 +113,17 @@ public class CompoundInterestApplication {
         for (int i = 0; i < 40; i++) {
             System.out.print("=");
         }
-        System.out.printf("");
+        System.out.printf("%n%s: %.2f%n", "PRINCIPAL ", calculator.getPrincipal());
+        System.out.printf("%s: %.2f%n", "INTEREST RATE ", calculator.getInterestRate());
+        System.out.printf("%s: %.2f%n", "NUMBER OF TIMES INTEREST APPLIED ", calculator.getNumberOfTimeInterestApplied());
+        System.out.printf("%s: %.2f%n%35s%.2f%n", "TIME ", calculator.getTime(),"AMOUNT = ", calculator.getA());
+        for (int i = 0; i < 40; i++) {
+            System.out.print("=");
+
+        }
+
+
+
+
     }
 }

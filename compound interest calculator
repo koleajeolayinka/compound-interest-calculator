@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-05T18:48:26.811Z" agent="5.0 (X11)" etag="Tkvvdw_vWWX_j0KtoQxd" version="19.0.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-06-05T19:04:13.622Z" agent="5.0 (X11)" etag="BRgh9O9XPtVTxRc-6CaD" version="19.0.0" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="666" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -32,7 +32,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="_XI9lKSQ7X2Ce4t6Mj00" name="Page-2">
-    <mxGraphModel dx="696" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="666" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -44,6 +44,9 @@
         </mxCell>
         <mxCell id="9_JiMT38LQ0lt4zmjQW9-7" value="Input" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="304.5" y="150" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9_JiMT38LQ0lt4zmjQW9-8" target="9_JiMT38LQ0lt4zmjQW9-35">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9_JiMT38LQ0lt4zmjQW9-8" value="Compound Interest (A)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="239.5" y="240" width="100" height="40" as="geometry" />
@@ -63,7 +66,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="9_JiMT38LQ0lt4zmjQW9-10" value="Principal (A)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-10" value="Principal (P)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="370.5" y="240" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="9_JiMT38LQ0lt4zmjQW9-11" value="" style="html=1;curved=1;rounded=0;noEdgeStyle=1;orthogonal=1;" edge="1" parent="1" source="9_JiMT38LQ0lt4zmjQW9-7" target="9_JiMT38LQ0lt4zmjQW9-10">
@@ -80,8 +83,36 @@
         <mxCell id="9_JiMT38LQ0lt4zmjQW9-22" value="Input Final Amount" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="640" y="320" width="100" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9_JiMT38LQ0lt4zmjQW9-24" target="9_JiMT38LQ0lt4zmjQW9-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.117;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9_JiMT38LQ0lt4zmjQW9-24" target="9_JiMT38LQ0lt4zmjQW9-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="9_JiMT38LQ0lt4zmjQW9-24" value="Input Interest Rate" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="630" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9_JiMT38LQ0lt4zmjQW9-27" target="9_JiMT38LQ0lt4zmjQW9-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9_JiMT38LQ0lt4zmjQW9-27" target="9_JiMT38LQ0lt4zmjQW9-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-27" value="Input Number Of Time Applied Per Time" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-29" value="Input Time in Years" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9_JiMT38LQ0lt4zmjQW9-35" target="9_JiMT38LQ0lt4zmjQW9-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-35" value="Input Principal Balance" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="229.5" y="430" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

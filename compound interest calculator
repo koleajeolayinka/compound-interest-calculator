@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-05T19:04:13.622Z" agent="5.0 (X11)" etag="BRgh9O9XPtVTxRc-6CaD" version="19.0.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-06-05T19:10:01.328Z" agent="5.0 (X11)" etag="R3GWLxapegHM1RkL-Rbt" version="19.0.0" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="666" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -32,7 +32,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="_XI9lKSQ7X2Ce4t6Mj00" name="Page-2">
-    <mxGraphModel dx="666" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1590" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -86,11 +86,6 @@
         <mxCell id="9_JiMT38LQ0lt4zmjQW9-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9_JiMT38LQ0lt4zmjQW9-24" target="9_JiMT38LQ0lt4zmjQW9-27">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9_JiMT38LQ0lt4zmjQW9-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.117;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9_JiMT38LQ0lt4zmjQW9-24" target="9_JiMT38LQ0lt4zmjQW9-27">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="570" y="540" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="9_JiMT38LQ0lt4zmjQW9-24" value="Input Interest Rate" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="630" y="430" width="120" height="60" as="geometry" />
         </mxCell>
@@ -105,6 +100,12 @@
         <mxCell id="9_JiMT38LQ0lt4zmjQW9-27" value="Input Number Of Time Applied Per Time" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="630" y="570" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9_JiMT38LQ0lt4zmjQW9-29" target="9_JiMT38LQ0lt4zmjQW9-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-49" value="Compound Interest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9_JiMT38LQ0lt4zmjQW9-29" target="9_JiMT38LQ0lt4zmjQW9-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="9_JiMT38LQ0lt4zmjQW9-29" value="Input Time in Years" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="630" y="710" width="120" height="60" as="geometry" />
         </mxCell>
@@ -113,6 +114,12 @@
         </mxCell>
         <mxCell id="9_JiMT38LQ0lt4zmjQW9-35" value="Input Principal Balance" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="229.5" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-46" value="calculate P = A(1+r/n)^n/t" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_JiMT38LQ0lt4zmjQW9-48" value="Calculate A = P(1 + r/n)^n/t" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="229.5" y="710" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

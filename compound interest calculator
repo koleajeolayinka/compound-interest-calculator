@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-05T15:14:15.044Z" agent="5.0 (X11)" etag="tpc6A0j_2LVR3ApwuMrb" version="19.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-05T15:15:49.068Z" agent="5.0 (X11)" etag="WPnszcScrxLOFnDcLHPq" version="19.0.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="666" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -13,9 +13,6 @@
         <mxCell id="HaXRexIqCuVp5qjq0PZT-1" value="&lt;div style=&quot;position: absolute; left: -99999px;&quot;&gt;Read more on Sarthaks.com - https://www.sarthaks.com/1110950/draw-a-flow-chart-to-calculate-compound-interest&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="610" y="370" width="30" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="HaXRexIqCuVp5qjq0PZT-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.sarthaks.com/?qa=blob&amp;qa_blobid=5602272027635668411;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="80" y="490" width="218" height="296" as="geometry" />
-        </mxCell>
         <mxCell id="HaXRexIqCuVp5qjq0PZT-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HaXRexIqCuVp5qjq0PZT-30" target="HaXRexIqCuVp5qjq0PZT-32">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -26,10 +23,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HaXRexIqCuVp5qjq0PZT-32" value="CI&amp;nbsp; = P × (1 + r/n)" style="rounded=1;whiteSpace=wrap;html=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="165" y="560" width="190" height="60" as="geometry" />
+          <mxGeometry x="195" y="280" width="190" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HaXRexIqCuVp5qjq0PZT-35" value="Compound interest is CI" style="rounded=1;whiteSpace=wrap;html=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="196" y="410" width="190" height="60" as="geometry" />
+          <mxGeometry x="230" y="420" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

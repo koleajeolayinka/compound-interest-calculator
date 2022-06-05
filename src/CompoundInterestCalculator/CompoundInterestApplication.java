@@ -20,8 +20,7 @@ public class CompoundInterestApplication {
                 PRESS 1 -> COMPOUND INTEREST  (A)
                 PRESS 2 -> PRINCIPAL BALANCE OF THE COMPOUND INTEREST (P)
                 PRESS 3 -> INTEREST RATE OF THE COMPOUND INTEREST (R)
-                PRESS 4 -> NUMBER OF TIMES INTEREST APPLIED PER TIME PERIOD
-                PRESS 5 -> NUMBER OF TIME PERIODS ELAPSED
+                PRESS 4 -> NUMBER OF TIME PERIODS ELAPSED
                 """);
         String UserInput = scanner.nextLine();
 
@@ -29,8 +28,7 @@ public class CompoundInterestApplication {
             case "1" -> compoundInterest();
             case "2" -> principalBalance();
             case "3" -> interestRate();
-            case "4" -> numberOfTimesInterestApplied();
-            case "5" -> TimePeriodsElapse();
+            case "4" -> TimePeriodsElapse();
             default -> Other();
         }
     }
@@ -42,12 +40,64 @@ public class CompoundInterestApplication {
     }
 
     private static void TimePeriodsElapse() {
+        try {
+            System.out.println("KINDLY ENTER YOUR FINAL AMOUNT BALANCE");
+            principalBalance = scanner.nextDouble();
+            System.out.println("KINDLY ENTER YOUR PRINCIPAL RATE");
+            interestRate = scanner.nextDouble();
+            System.out.println("ENTER NUMBER OF TIMES INTEREST APPLIED PER TIME PERIOD");
+            number = scanner.nextDouble();
+            System.out.println("ENTER NUMBER OF TIME PERIODS ELAPSED IN YEAR\n\tex: 2years input 2");
+            time = scanner.nextDouble();
+        }catch (InputMismatchException ignored){
+            System.out.println("Incorrect input");
+        }
+        calculator.FinalAmount(principalBalance);
+        calculator.Principal(interestRate);
+        calculator.NumberOfTimeInterestApplied(number);
+        calculator.Time(time);
+        TimeResult();
+
     }
 
-    private static void numberOfTimesInterestApplied() {
+    private static void TimeResult() {
+        line();
+        System.out.printf("%n%s: %.2f%n", "FINAL AMOUNT ", calculator.getFinalAmount());
+        System.out.printf("%s: %.2f%n", "PRINCIPAL ", calculator.getPrincipal());
+        System.out.printf("%s: %.2f%n", "NUMBER OF TIMES INTEREST APPLIED ", calculator.getNumberOfTimeInterestApplied());
+        System.out.printf("%s: %.2f%n%35s%.2f%n", "TIME ", calculator.getTime(),"AMOUNT = ", calculator.T());
+        line();
     }
+
 
     private static void interestRate() {
+        try {
+            System.out.println("KINDLY ENTER YOUR FINAL AMOUNT BALANCE");
+            principalBalance = scanner.nextDouble();
+            System.out.println("KINDLY ENTER YOUR PRINCIPAL RATE");
+            interestRate = scanner.nextDouble();
+            System.out.println("ENTER NUMBER OF TIMES INTEREST APPLIED PER TIME PERIOD");
+            number = scanner.nextDouble();
+            System.out.println("ENTER NUMBER OF TIME PERIODS ELAPSED IN YEAR\n\tex: 2years input 2");
+            time = scanner.nextDouble();
+        }catch (InputMismatchException ignored){
+            System.out.println("Incorrect input");
+        }
+        calculator.FinalAmount(principalBalance);
+        calculator.Principal(interestRate);
+        calculator.NumberOfTimeInterestApplied(number);
+        calculator.Time(time);
+        InterestRateResult();
+    }
+
+    private static void InterestRateResult() {
+        line();
+        System.out.printf("%n%s: %.2f%n", "FINAL AMOUNT ", calculator.getFinalAmount());
+        System.out.printf("%s: %.2f%n", "PRINCIPAL ", calculator.getPrincipal());
+        System.out.printf("%s: %.2f%n", "NUMBER OF TIMES INTEREST APPLIED ", calculator.getNumberOfTimeInterestApplied());
+        System.out.printf("%s: %.2f%n%35s%.2f%n", "TIME ", calculator.getTime(),"AMOUNT = ", calculator.T());
+        line();
+
     }
 
     private static void principalBalance() {
@@ -72,17 +122,12 @@ public class CompoundInterestApplication {
     }
 
     private static void PrincipalResult() {
-        for (int i = 0; i < 40; i++) {
-            System.out.print("=");
-        }
+        line();
         System.out.printf("%n%s: %.2f%n", "PRINCIPAL ", calculator.getPrincipal());
         System.out.printf("%s: %.2f%n", "INTEREST RATE ", calculator.getInterestRate());
         System.out.printf("%s: %.2f%n", "NUMBER OF TIMES INTEREST APPLIED ", calculator.getNumberOfTimeInterestApplied());
         System.out.printf("%s: %.2f%n%35s%.2f%n", "TIME ", calculator.getTime(),"AMOUNT = ", calculator.getA());
-        for (int i = 0; i < 40; i++) {
-            System.out.print("=");
-
-        }
+        line();
 
 
 
@@ -115,10 +160,7 @@ public class CompoundInterestApplication {
         System.out.printf("%s: %.2f%n", "INTEREST RATE ", calculator.getInterestRate());
         System.out.printf("%s: %.2f%n", "NUMBER OF TIMES INTEREST APPLIED ", calculator.getNumberOfTimeInterestApplied());
         System.out.printf("%s: %.2f%n%35s%.2f%n", "TIME ", calculator.getTime(), "AMOUNT = ", calculator.getA());
-        for (int i = 0; i < 40; i++) {
-            System.out.print("=");
-
-        }
+        line();
     }
 
     private static void line() {
@@ -129,4 +171,5 @@ public class CompoundInterestApplication {
     }
 
 }
+
 

@@ -19,8 +19,6 @@ public class CompoundInterestApplication {
         System.out.println("""
                 PRESS 1 -> COMPOUND INTEREST  (A)
                 PRESS 2 -> PRINCIPAL BALANCE OF THE COMPOUND INTEREST (P)
-                PRESS 3 -> INTEREST RATE OF THE COMPOUND INTEREST (R)
-                PRESS 4 -> NUMBER OF TIME PERIODS ELAPSED
                 """);
         String UserInput = scanner.nextLine();
 
